@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-//@Component
+@Component
 public class AopRunner implements CommandLineRunner {
 
     @Autowired
@@ -13,6 +13,6 @@ public class AopRunner implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        calculator.add(7,3);
+        calculator.divide(60,20);
     }
 }
